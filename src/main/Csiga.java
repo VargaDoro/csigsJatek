@@ -13,7 +13,6 @@ public class Csiga {
     
     public Csiga(String szin){
         this.szin = szin;
-        this.megy();
     }
     
     private void setSzinkod(String szinKod){
