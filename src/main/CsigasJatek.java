@@ -17,16 +17,15 @@ public class CsigasJatek extends Jatek{
     } 
     
     public Csiga csigagyorsitas(){
+        Csiga valasztott = null;
         int eselySzam = RND.nextInt(0, 100);
         boolean esely = false;
         if (eselySzam < 20) {
             esely = true;
-            Csiga valasztott;
-            int csigaSzam = RND.nextInt(0, 3);
+            int csigaSzam = RND.nextInt(0, csigak.length+1);
             valasztott = csigak[csigaSzam];
         }
-        
-        return ;
+        return valasztott;
     }
     
     public void verseny(){
