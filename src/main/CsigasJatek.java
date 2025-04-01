@@ -50,13 +50,7 @@ public class CsigasJatek extends Jatek{
         System.out.println("Melyik csigára fogadsz? (piros, zold, kek): ");
         String fogadottCsiga = SCR.nextLine().toLowerCase();
 
-        Csiga fogadott = null;
-        for (Csiga csiga : csigak) {
-            if (csiga.getSzin().equals(fogadottCsiga)) {
-                fogadott = csiga;
-                break;
-            }
-        }
+        
         csigagyorsitas();
         verseny();
         
