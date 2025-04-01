@@ -10,7 +10,7 @@ public class JatekIndito {
             jatek.start();
         }
 
-        CsigasJatek csigaJatek = (CsigasJatek) csigas;
+        CsigasJatek csigaJatek = new CsigasJatek();
         csigaJatek.fogadas();  
     }
 }
