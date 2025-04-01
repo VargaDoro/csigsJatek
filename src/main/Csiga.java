@@ -23,8 +23,8 @@ public class Csiga {
     public void megy() {
     int utacska = RND.nextInt(0, 4);
     if (this.gyorsito) {
-        for (int i = 0; i < utacska; i++) {
-            this.megtettUt += "" + UTJEL_2 + UTJEL_2;
+        for (int i = 0; i < utacska * 2; i++) {
+            this.megtettUt += UTJEL_2;
         }
     } else {
         for (int i = 0; i < utacska; i++) {

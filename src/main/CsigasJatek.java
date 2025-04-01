@@ -59,7 +59,7 @@ public class CsigasJatek extends Jatek{
         }
         csigagyorsitas();
         verseny();
-
+        
         Csiga nyertes = csigak[0];
         for (Csiga csiga : csigak) {
             if (csiga.getMegtettUt().length() > nyertes.getMegtettUt().length()) {
