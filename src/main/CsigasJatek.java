@@ -11,6 +11,7 @@ public class CsigasJatek extends Jatek{
 //        System.out.println("Csigás indúl");
 //    };
     private Csiga[] csigak;
+    public static int index;
     
     public CsigasJatek() {
         csigak = new Csiga[3];
@@ -47,8 +48,9 @@ public class CsigasJatek extends Jatek{
     }
     
     public void fogadas() {
-        System.out.println("Melyik csigára fogadsz? (piros, zold, kek): ");
-        String fogadottCsiga = SCR.nextLine().toLowerCase();
+        System.out.print("Melyik csigára fogadsz? (piros: 1,\tzöld: 2,\tkék: 3): ");
+        index = Integer.parseInt(SCR.nextLine())-1;
+        String fogadottCsiga = this.csigak[index].getSzin();
 
         
         csigagyorsitas();
